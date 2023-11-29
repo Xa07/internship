@@ -18,8 +18,8 @@
 
 .sidebar nav li {
     list-style: none;
-    font-size: 24px;
-    padding: 26px 0px;
+    font-size: 58px;
+    padding: 67px 0px;
     /* space btn top n bottom of li's */
 }
 
@@ -34,8 +34,8 @@
 
 .infocontainer {
     background-color: yellow;
-    height: 50px;
-    width: 40px;
+    height:60vw;
+    width: 70vw;
     margin: 144px auto;
     display: flex;
     justify-content: space-between;
@@ -44,20 +44,34 @@
 
 .devinfo {
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    flex-direction: column;
+    display: flex;
+    padding: 7vw;
+    margin: 3vw;
+}
+
+.devpic img{
+    /* in devpic stylying img or image */
+    height: 35vw;
     display: flex;
 }
 
-.devpic img {
-    /* in devpic stylying img or image */
-    height: 50px;
-}
-
 .hello {
-    font-size: 50px;
+    font-size: 72px;
+    padding: 49px;
 }
 
 .button button {
-    width: 20px;
-    height: 30px;
+    width: 7vw;
+    height: 2vw;
+    font-size: 35px;
+    padding: 0px;
+    cursor: pointer;
+    background-color: aqua;
+    border-radius: 6px;
+    margin-bottom: 33px;                                            
+}
+.contact{
+    
 }
