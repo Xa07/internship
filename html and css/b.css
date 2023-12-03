@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 * {
     padding: 0;
     margin: 0;
 }
 
 .sidebar {
-    background-color: coral;
+    background-color: rgb(168,165,235);
     width: 20vw;
     font-family: 'Merriweather', serif;
+
 }
 
 .sidebar nav {
@@ -20,7 +21,17 @@
     list-style: none;
     font-size: 58px;
     padding: 67px 0px;
+    
     /* space btn top n bottom of li's */
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-weight: 600;
+}
+.sidebar nav li a:hover{
+     color: rgb(85,36,44);
 }
 
 .container {
@@ -28,41 +39,58 @@
 }
 
 .main {
-    background-color: chartreuse;
+    background-color: rgb(225,209,232);
     width: 90vw;
+    
 }
 
-.infocontainer {
-    background-color: yellow;
-    height:60vw;
-    width: 70vw;
-    margin: 144px auto;
+.infocontainer { 
     display: flex;
-    justify-content: space-between;
-    font-family: 'Merriweather', serif;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5vw;
+    font-size: 4vw;
 }
 
 .devinfo {
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     display: flex;
-    padding: 7vw;
-    margin: 3vw;
+    padding: 22px;
+    margin: 10vw;
 }
-
+.devpic{
+    display: flex;
+    flex-direction: row;
+}
 .devpic img{
     /* in devpic stylying img or image */
-    height: 35vw;
+    height: 20vw;
+    width: 20vw;
     display: flex;
+    margin: 4vw;
+}
+/* .lastt{ */
+    font-size: 42px;
+    margin: 13px;
+    padding: 5px;
 }
 
-.hello {
-    font-size: 72px;
-    padding: 49px;
+/* .hello{ */
+    font-size: 55px;
+    padding: 14px;
 }
-
-.button button {
+/* .first{ */
+    font-size: 46px;
+    padding: 12px;
+}
+/* .last{ */
+    font-size: 33px;
+    padding: 5px;
+    margin: 5px;
+}
+#button{
     width: 7vw;
     height: 2vw;
     font-size: 35px;
@@ -72,6 +100,122 @@
     border-radius: 6px;
     margin-bottom: 33px;                                            
 }
+#para{
+    margin: 3vw;
+    font-size: 4vw;
+    word-spacing: 20px;
+    font-style: italic;
+    font-weight: 800;
+    color: rgb(44,44,43);
+}
 .contact{
+    font-family: 'Merriweather', serif;
+    padding: 72px;
+}
+.contact h1{
+    /* use differnt font style here */
+    font-family: 'Playfair Display', serif;
     
+    padding: 42px 0px;
+    font-size: 56px;
+
+}
+.contact form div{
+    font-size: 27px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+}
+.contact form div input{
+    border-radius: 18px;
+    width: 23vw;
+    height: 35px;
+    font-size: 20px;
+}
+
+#emailhelp.form-text{
+    /* in contact div to give separate padding for this respective class */
+    padding: 0px;
+    font-size: 12px;
+    word-spacing: 5px;
+}
+.contact form div button{
+    width: 53px;
+    height: 36px;
+    font-size: 11px;
+    border-radius: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: aqua;
+}
+.intro h2{
+    font-family: 'Playfair Display', serif; 
+    padding: 20px 20px;
+    font-size: 35px;
+}
+.intro p{
+    font-family: 'Playfair Display', serif;
+    padding: 0px 10px;
+    margin: 0px 8px;
+    font-size: 29px;
+    word-spacing: 10px;
+}
+.intro ul li{
+    list-style: none;
+    padding: 10px 20px;
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+}
+.scale{
+    background-color: brown;
+    height: 28px;
+    width: 20vw;
+    margin: 0px 9px;
+    border-radius: 17px;
+    border: 3px solid black;
+}
+.scales{
+    background-color: #00a1ff;
+    height: 28px;
+    width: 10vw;
+    margin: 5px;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+@media (max-width: 1600px){
+    .sidebar{
+        position : absolute;
+        transform: translate(-443px,0px);
+    }
+    
+}
+
+.ybi{
+    margin: 3vw;
+    display: flex;
+    flex-direction: row;
+}
+.ybi img{
+    height: 11vw;
+    padding-right: 5vw;
+}
+.ybi p{
+    font-family: 'Playfair Display', serif;
+    font-size: 29px;
+    word-spacing: 10px;
+}
+.course p{
+    font-family: 'Playfair Display', serif;
+    font-size: 29px;
+    word-spacing: 10px;
+    margin: 0px 3vw;
+    padding: 9px 0px;
+}
+.llp{
+    font-weight: 800;
+}
+.achieve{
+    background-color: rgb(225,209,232);
+    width: 90vw;
 }
